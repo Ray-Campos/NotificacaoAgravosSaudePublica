@@ -18,6 +18,4 @@ public abstract class Notificacao {
         this.dadosPaciente = dadosPaciente;
         this.dadosResidenciais = dadosResidenciais;
     }
-
-    public abstract TipoAgravos getTipoAgravos();
 }

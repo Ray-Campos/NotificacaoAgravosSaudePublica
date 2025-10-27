@@ -1,4 +1,4 @@
-package enums;
+package enums.agravos;
 
 public enum TipoAgravos {
     HANSENÍASE(1, "Hanseníase"),
