@@ -1,5 +1,7 @@
 package model;
 
+import enums.agravos.hanseniase.FormaClinica;
+
 public class NotificacaoHanseniase extends Notificacao {
     private String numeroProntuario;
     private String ocupacao;
@@ -10,8 +12,9 @@ public class NotificacaoHanseniase extends Notificacao {
         DadosGerais dadosGerais,
         DadosInvestigador dadosInvestigador, 
         DadosPaciente dadosPaciente, 
-        DadosResidenciais dadosResidenciais){
+        DadosResidenciais dadosResidenciais,
+        Conclusao conclusao){
 
-        super(dadosGerais, dadosInvestigador, dadosPaciente, dadosResidenciais);
+        super(dadosGerais, dadosInvestigador, dadosPaciente, dadosResidenciais, conclusao);
     }
 }

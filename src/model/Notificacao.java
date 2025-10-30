@@ -7,16 +7,19 @@ public abstract class Notificacao {
     protected DadosInvestigador dadosInvestigador;
     protected DadosPaciente dadosPaciente;
     protected DadosResidenciais dadosResidenciais;
+    protected Conclusao conclusao;
 
     public Notificacao(
         DadosGerais dadosGerais,
         DadosInvestigador dadosInvestigador,
         DadosPaciente dadosPaciente,
-        DadosResidenciais dadosResidenciais) {
+        DadosResidenciais dadosResidenciais,
+        Conclusao conclusao) {
         
         this.dadosGerais = dadosGerais;
         this.dadosInvestigador = dadosInvestigador;
         this.dadosPaciente = dadosPaciente;
         this.dadosResidenciais = dadosResidenciais;
+        this.conclusao  = conclusao;
     }
 }
