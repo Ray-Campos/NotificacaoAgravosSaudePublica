@@ -20,6 +20,6 @@ public abstract class Notificacao {
         this.dadosInvestigador = dadosInvestigador;
         this.dadosPaciente = dadosPaciente;
         this.dadosResidenciais = dadosResidenciais;
-        this.conclusao  = conclusao;
+        this.conclusao = conclusao;
     }
 }
