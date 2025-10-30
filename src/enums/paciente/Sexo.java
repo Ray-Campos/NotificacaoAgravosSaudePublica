@@ -1,9 +1,12 @@
-package enums;
+package enums.paciente;
 
-public enum Sexo {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum Sexo implements EnumInterface{
     MASCULINO(1, "Masculino"),
     FEMININO(2, "Feminino"),
-    IGNORADO(3, "Ignorado");
+    IGNORADO(9, "Ignorado");
 
     private final int codigo;
     private final String descricao;
@@ -13,16 +16,15 @@ public enum Sexo {
         this.descricao = descricao;
     }
 
-    public int getCodigo() {
-        return codigo;
-    }
+    @Override
+    public int getCodigo() {return codigo;}
 
+    @Override
     public String getDescricao() {
         return descricao;
     }
 
     public static Sexo getSexo(int codigo) {
-        for(Sexo s : values()) if (s.getCodigo() == codigo) return s;
-        return IGNORADO;
+        return EnumUtil.getFromCodigo(Sexo.class, codigo, IGNORADO);
     }
 }

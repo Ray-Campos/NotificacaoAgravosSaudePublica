@@ -1,6 +1,9 @@
-package enums;
+package enums.paciente;
 
-public enum Gestante {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum Gestante implements EnumInterface{
     PRIMEIRO_TRIMESTRE(1, "1º Trimestre"),
     SEGUNDO_TRIMESTRE(2, "2º Trimestre"),
     TERCEIRO_TRIMESTRE(3, "3º Trimestre"),
@@ -17,12 +20,13 @@ public enum Gestante {
         this.descricao = descricao;
     }
 
+    @Override
     public int getCodigo() {return codigo;}
 
+    @Override
     public String getDescricao() {return descricao;}
 
     public static Gestante getGestante(int codigo) {
-        for(Gestante g : values()) if(g.getCodigo() == codigo) return g;
-        return null;
+        return EnumUtil.getFromCodigo(Gestante.class, codigo, IGNORADO);
     }
 }

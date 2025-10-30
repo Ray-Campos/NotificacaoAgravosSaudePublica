@@ -1,6 +1,9 @@
-package enums;
+package enums.paciente;
 
-public enum Escolaridade {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum Escolaridade implements EnumInterface{
     ANALFABETO(0, "Analfabeto"),
     PRIMARIO_INCOMPLETO(1, "1ª a 4ª série incompleta"),
     PRIMARIO_COMPLETO(2, "4ª série completa"),
@@ -21,12 +24,13 @@ public enum Escolaridade {
         this.descricao = descricao;
     }
 
+    @Override
     public int getCodigo() {return codigo;}
 
+    @Override
     public String getDescricao() {return descricao;}
 
     public static Escolaridade getEscolaridade(int codigo) {
-        for(Escolaridade e : values()) if(e.getCodigo() == codigo) return e;
-        return null;
+        return EnumUtil.getFromCodigo(Escolaridade.class, codigo, NAO_APLICA);
     }
 }

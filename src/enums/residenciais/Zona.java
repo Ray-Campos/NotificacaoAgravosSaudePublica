@@ -1,6 +1,9 @@
-package emuns;
+package enums.paciente;
 
-public enum Zona {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum Zona implements EnumInterface{
     URBANA(1, "Urbana"),
     RURAL(2, "Rural"),
     PERIURBANA(3, "Periurbana"),
@@ -14,12 +17,13 @@ public enum Zona {
         this.descricao = descricao;
     }
 
+    @Override
     public int getCodigo() {return codigo;}
 
+    @Override
     public String getDescricao() {return descricao;}
 
     public static Zona getZona(int codigo) {
-        for(Zona z : values()) if(z.getCodigo() == codigo) return z;
-        return null;
+        return EnumUtil.getFromCodigo(Zona.class, codigo, IGNORADO);
     }
 }

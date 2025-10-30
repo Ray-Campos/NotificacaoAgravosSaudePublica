@@ -1,6 +1,9 @@
 package enums.agravos;
 
-public enum TipoAgravos {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum TipoAgravos implements EnumInterface{
     HANSENÍASE(1, "Hanseníase"),
     TUBERCULOSE(2, "Tuberculose"),
     MALÁRIA(3, "Malária");
@@ -13,16 +16,17 @@ public enum TipoAgravos {
         this.descricao = descricao;
     }
 
+    @Override
     public int getCodigo() {
         return codigo;
     }
 
+    @Override
     public String getDescricao() {
         return descricao;
     }
 
     public static TipoAgravos getTipoAgravos(int codigo) {
-        for(TipoAgravos t : values()) if(t.getCodigo() == codigo) return t;
-        return null;
+        return EnumUtil.getFromCodigo(TipoAgravos.class, codigo, null);
     }
 }

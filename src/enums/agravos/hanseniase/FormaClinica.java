@@ -1,6 +1,9 @@
 package enums.agravos.hanseniase;
 
-public enum FormaClinica {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum FormaClinica implements EnumInterface{
     I(1, "I"),
     T(2, "T"),
     D(3, "D"),
@@ -15,12 +18,13 @@ public enum FormaClinica {
         this.descricao = descricao;
     }
 
+    @Override
     public int getCodigo() {return codigo;}
 
+    @Override
     public String getDescricao() {return descricao;}
 
     public static FormaClinica getFormaClinica(int codigo) {
-        for(FormaClinica f : values()) if(f.getCodigo() == codigo) return f;
-        return null;
+        return EnumUtil.getFromCodigo(FormaClinica.class, codigo, NAO_CLASSIFICADO);
     }
 }

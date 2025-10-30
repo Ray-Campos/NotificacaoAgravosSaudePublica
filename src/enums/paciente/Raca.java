@@ -1,6 +1,9 @@
-package enums;
+package enums.paciente;
 
-public enum Raca {
+import enums.EnumInterface;
+import util.EnumUtil;
+
+public enum Raca implements EnumInterface{
     BRANCA(1, "Branca"),
     PRETA(2, "Preta"),
     AMARELA(3, "Amarela"),
@@ -16,12 +19,13 @@ public enum Raca {
         this.descricao = descricao;
     }
 
+    @Override
     public int getCodigo() {return codigo;}
 
+    @Override
     public String getDescricao() {return descricao;}
 
     public static Raca getRaca(int codigo) {
-        for(Raca r : values()) if(r.getCodigo() == codigo) return r;
-        return null;
+        return EnumUtil.getFromCodigo(Raca.class, codigo, IGNORADO);
     }
 }
