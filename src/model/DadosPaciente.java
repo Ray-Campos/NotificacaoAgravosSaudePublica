@@ -1,6 +1,6 @@
 package model;
 
-import enums.*;
+import enums.paciente.*;
 import java.time.LocalDate;
 
 public class DadosPaciente {

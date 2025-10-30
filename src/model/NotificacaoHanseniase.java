@@ -1,7 +1,5 @@
 package model;
 
-import enums;
-
 public class NotificacaoHanseniase extends Notificacao {
     private String numeroProntuario;
     private String ocupacao;
@@ -9,10 +7,11 @@ public class NotificacaoHanseniase extends Notificacao {
     private FormaClinica formaClinica;
 
     public NotificacaoHanseniase(
-        DadosGerais dadosGerais, 
+        DadosGerais dadosGerais,
+        DadosInvestigador dadosInvestigador, 
         DadosPaciente dadosPaciente, 
         DadosResidenciais dadosResidenciais){
 
-        super(dadosGerais, dadosPaciente, dadosResidenciais);
+        super(dadosGerais, dadosInvestigador, dadosPaciente, dadosResidenciais);
     }
 }

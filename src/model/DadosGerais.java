@@ -1,6 +1,6 @@
 package model;
 
-import enums.*;
+import enums.agravos.TipoAgravos;
 import java.time.LocalDate;
 
 public class DadosGerais {
@@ -50,11 +50,11 @@ public class DadosGerais {
     }
 
     public TipoAgravos getAgravo() {
-        return Agravo;
+        return agravo;
     }
 
-    public void setAgravo(TipoAgravos Agravo) {
-        this.Agravo = Agravo;
+    public void setAgravo(TipoAgravos agravo) {
+        this.agravo = agravo;
     }
 
     public String getCodigoCID10() {
@@ -73,12 +73,12 @@ public class DadosGerais {
         this.dataNotificacao = dataNotificacao;
     }
 
-    public String getUF() {
-        return UF;
+    public String getUf() {
+        return uf;
     }
 
-    public void setUF(String UF) {
-        this.UF = UF;
+    public void setUF(String uf) {
+        this.uf = uf;
     }
 
     public String getMunicipioNotificacao() {
@@ -97,12 +97,12 @@ public class DadosGerais {
         this.codigoIBGE = codigoIBGE;
     }
 
-    public String getUS() {
-        return US;
+    public String getUs() {
+        return us;
     }
 
-    public void setUS(String US) {
-        this.US = US;
+    public void setUS(String us) {
+        this.us = us;
     }
 
     public String getUsCodigo() {

@@ -1,6 +1,6 @@
 package model;
 
-import enums.*;
+import enums.residenciais.*;
 
 public class DadosResidenciais {
     private String uf;
