@@ -7,6 +7,6 @@ public class EnumUtil {
         Class <E> enumClass, int codigo, E valorPadrao){
         
         for(E e : enumClass.getEnumConstants()) if (e.getCodigo() == codigo) return e;
-        return null;
+        return valorPadrao;
     }
 }
