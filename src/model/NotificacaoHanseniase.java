@@ -18,6 +18,8 @@ public class NotificacaoHanseniase extends Notificacao {
     private EsquemaTerapeutico esquemaTerapeutico;
     private Integer numeroContatosRegistrados;
 
+    public NotificacaoHanseniase() {}
+
     public NotificacaoHanseniase(
         DadosGerais dadosGerais,
         DadosInvestigador dadosInvestigador,

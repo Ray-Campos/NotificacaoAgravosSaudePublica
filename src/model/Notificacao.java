@@ -9,6 +9,8 @@ public abstract class Notificacao {
     protected DadosResidenciais dadosResidenciais;
     protected Conclusao conclusao;
 
+    public Notificacao() {}
+
     public Notificacao(
         DadosGerais dadosGerais,
         DadosInvestigador dadosInvestigador,
