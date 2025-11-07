@@ -30,6 +30,7 @@ public enum Escolaridade implements EnumInterface{
     @Override
     public String getDescricao() {return descricao;}
 
+    @Deprecated
     public static Escolaridade getEscolaridade(int codigo) {
         return EnumUtil.getFromCodigo(Escolaridade.class, codigo, NAO_APLICA);
     }

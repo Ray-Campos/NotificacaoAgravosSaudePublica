@@ -25,6 +25,7 @@ public enum Raca implements EnumInterface{
     @Override
     public String getDescricao() {return descricao;}
 
+    @Deprecated
     public static Raca getRaca(int codigo) {
         return EnumUtil.getFromCodigo(Raca.class, codigo, IGNORADO);
     }

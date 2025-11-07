@@ -1,4 +1,4 @@
-package enums.paciente;
+package enums.residenciais;
 
 import enums.EnumInterface;
 import util.EnumUtil;
@@ -23,6 +23,7 @@ public enum Zona implements EnumInterface{
     @Override
     public String getDescricao() {return descricao;}
 
+    @Deprecated
     public static Zona getZona(int codigo) {
         return EnumUtil.getFromCodigo(Zona.class, codigo, IGNORADO);
     }

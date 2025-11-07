@@ -26,6 +26,7 @@ public enum TipoAgravos implements EnumInterface{
         return descricao;
     }
 
+    @Deprecated
     public static TipoAgravos getTipoAgravos(int codigo) {
         return EnumUtil.getFromCodigo(TipoAgravos.class, codigo, null);
     }

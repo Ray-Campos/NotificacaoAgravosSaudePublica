@@ -21,6 +21,7 @@ public enum ClassificacaoFinal implements EnumInterface{
     @Override
     public String getDescricao() {return descricao;}
 
+    @Deprecated
     public static ClassificacaoFinal getClassificacaoFinal(int codigo) {
         return EnumUtil.getFromCodigo(ClassificacaoFinal.class, codigo, DESCARTADO);
     }

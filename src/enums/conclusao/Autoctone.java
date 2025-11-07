@@ -22,6 +22,7 @@ public enum Autoctone implements EnumInterface{
     @Override
     public String getDescricao() {return descricao;}
 
+    @Deprecated
     public static Autoctone getAutoctone(int codigo){
         return EnumUtil.getFromCodigo(Autoctone.class, codigo, INDETERMINADO);
     }

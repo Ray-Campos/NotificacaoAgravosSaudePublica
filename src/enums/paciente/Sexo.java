@@ -24,6 +24,7 @@ public enum Sexo implements EnumInterface{
         return descricao;
     }
 
+    @Deprecated
     public static Sexo getSexo(int codigo) {
         return EnumUtil.getFromCodigo(Sexo.class, codigo, IGNORADO);
     }

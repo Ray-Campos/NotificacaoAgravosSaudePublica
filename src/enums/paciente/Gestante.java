@@ -26,6 +26,7 @@ public enum Gestante implements EnumInterface{
     @Override
     public String getDescricao() {return descricao;}
 
+    @Deprecated
     public static Gestante getGestante(int codigo) {
         return EnumUtil.getFromCodigo(Gestante.class, codigo, IGNORADO);
     }
