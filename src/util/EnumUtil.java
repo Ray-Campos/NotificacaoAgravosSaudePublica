@@ -1,6 +1,7 @@
 package util;
 
 import enums.EnumInterface;
+import util.ValidationUtil;
 
 public class EnumUtil {
     public static <E extends Enum<E> & EnumInterface> E getFromCodigo(
