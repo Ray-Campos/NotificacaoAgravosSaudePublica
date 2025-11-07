@@ -3,7 +3,7 @@ package enums.agravos.tuberculose;
 import enums.EnumInterface;
 import util.EnumUtil;
 
-public enum PopulacaoEspecial implements EnumInterface{
+/*public enum PopulacaoEspecial implements EnumInterface{
     SIM(1, "Sim", TipoPopulacao.class),
     NAO(2, "Não"),
     IGNORADO(9, "Ignorado");
@@ -35,4 +35,4 @@ public enum PopulacaoEspecial implements EnumInterface{
     public static PopulacaoEspecial getPopulacaoEspecial(int codigo) {
         return EnumUtil.getFromCodigo(PopulacaoEspecial.class, codigo, IGNORADO);
     }
-}
+}*/
