@@ -9,7 +9,6 @@ O sistema deve permitir o registro e geração de relatórios das notificações
 - [Malária](https://portalsinan.saude.gov.br/malaria)
     - [Ficha de Notificação/Investigação de Malária](http://portalsinan.saude.gov.br/images/documentos/Agravos/Malaria/Malaria_v5.pdf)
 
-Detalhes sobre a entrega da atividade podem ser encontrados no arquivo [ENTREGA](ENTREGA.md).
 
 ## Funcionalidades
 ### Registrar Notificações
