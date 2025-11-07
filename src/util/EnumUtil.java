@@ -18,7 +18,7 @@ public class EnumUtil {
                 System.out.printf("%d - %s\n", e.getCodigo(), e.getDescricao());
             }
 
-            int codigo = InputUtil.getInt("Escolha uma opção: ");
+            int codigo = ValidationUtil.getInt("Escolha uma opção: ");
             E en = EnumUtil.getFromCodigo(enumClass, codigo, null);
 
             if(en != null) return en;
