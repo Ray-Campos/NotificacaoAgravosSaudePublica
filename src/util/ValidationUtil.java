@@ -32,7 +32,7 @@ public class ValidationUtil {
         }
     }
 
-    public static int getMenuOption(String prompt, int min, int max) {
+    public static int getIntOption(String prompt, int min, int max) {
         while(1) {
             try {
                 Integer n = getInt(prompt);
