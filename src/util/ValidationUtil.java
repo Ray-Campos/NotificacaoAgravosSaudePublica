@@ -22,7 +22,7 @@ public class ValidationUtil {
     }
 
     public static int getInt(String prompt) {
-        while(1) {
+        while(true) {
             System.out.printf("%s", prompt);
             try {
                 return Integer.parseInt(input.nextLine());
@@ -33,7 +33,7 @@ public class ValidationUtil {
     }
 
     public static int getIntOption(String prompt, int min, int max) {
-        while(1) {
+        while(true) {
             try {
                 Integer n = getInt(prompt);
                 if(n >= min && n <= max) return n;
@@ -44,7 +44,7 @@ public class ValidationUtil {
     }
 
     public static LocalDate getDate(String prompt) {
-        while(1) {
+        while(true) {
             System.out.printf("%s (AAAA-MM-DD): ");
             try {
                 return LocalDate.parse(input.nextLine());
