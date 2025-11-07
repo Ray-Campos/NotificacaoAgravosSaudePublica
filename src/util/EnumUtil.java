@@ -11,7 +11,7 @@ public class EnumUtil {
     }
 
     public static <E extends Enum<E> & EnumInterface> E escolherEnum(Class<E> enumClass) {
-        while(1) {
+        while(true) {
             System.out.printf("Opções:\n");
             for(E e : enumClass.getEnumConstants()) {
                 System.out.printf("%d - %s\n", e.getCodigo(), e.getDescricao());

@@ -14,7 +14,7 @@ public class ValidationUtil {
     }
 
     public static String getStringValido(String prompt) {
-        while(1) {
+        while(true) {
             String str = getString(prompt);
             if(str.isEmpty()) printf("Campo não pode ser vazio!\n");
             else return str;
