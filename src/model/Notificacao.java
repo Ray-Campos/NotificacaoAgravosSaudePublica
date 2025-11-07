@@ -1,5 +1,7 @@
 package model;
 
+import enums.*;
+
 public abstract class Notificacao {
     protected String numero;
     protected TipoAgravos agravo;

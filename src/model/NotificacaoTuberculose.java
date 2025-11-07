@@ -1,7 +1,6 @@
 package model;
 
 import java.time.LocalDate;
-
 import enums.agravos.tuberculose.*;
 
 public class NotificacaoTuberculose extends Notificacao {

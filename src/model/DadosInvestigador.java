@@ -1,6 +1,5 @@
 package model;
 
-
 public class DadosInvestigador {
     private String municipioUs;
     private String codigoUnidadeSaude;

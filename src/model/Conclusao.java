@@ -2,8 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-import enums.conclusao.Autoctone;
-import enums.conclusao.ClassificacaoFinal;
+import enums.conclusao.*;
 
 public class Conclusao {
     private ClassificacaoFinal classificacaoFinal;
