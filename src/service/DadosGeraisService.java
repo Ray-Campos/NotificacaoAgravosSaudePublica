@@ -1,9 +1,7 @@
 package service;
 
 import util.*;
-
 import java.time.LocalDate;
-
 import enums.agravos.TipoAgravos;
 import model.DadosGerais;
 
