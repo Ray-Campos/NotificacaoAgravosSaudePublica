@@ -6,8 +6,8 @@ import enums.agravos.tuberculose.*;
 
 public class NotificacaoTuberculose extends Notificacao {
     private String numeroProntuario;
-    /*private TipoEntrada tipoEntrada;
-    private PopulacaoEspecial populacaoEspecial;
+    private TipoEntrada tipoEntrada;
+    /*private PopulacaoEspecial populacaoEspecial;
     private BeneceficiarioProgamaRenda beneceficiarioProgamaRenda;
     private Forma forma;
     private SeExtrapulmonar seExtrapulmonar;
