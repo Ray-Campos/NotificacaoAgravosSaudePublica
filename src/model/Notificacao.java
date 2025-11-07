@@ -1,6 +1,7 @@
 package model;
 
 import enums.*;
+import enums.agravos.*;
 
 public abstract class Notificacao {
     protected String numero;
