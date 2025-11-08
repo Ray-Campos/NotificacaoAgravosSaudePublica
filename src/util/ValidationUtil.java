@@ -24,8 +24,9 @@ public class ValidationUtil {
     public static int getInt(String prompt) {
         while(true) {
             System.out.printf("%s", prompt);
+            String inputString = input.nextLine().trim();
             try {
-                return Integer.parseInt(input.nextLine());
+                return Integer.parseInt(inputString);
             } catch (NumberFormatException erro) {
                 System.out.printf("Número não válido!\n");
             }
