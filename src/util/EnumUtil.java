@@ -11,7 +11,7 @@ public class EnumUtil {
         return valorPadrao;
     }
 
-    public static <E extends Enum<E> & EnumInterface> E escolherEnum(Class<E> enumClass , String prompt) {
+    public static <E extends Enum<E> & EnumInterface> E escolherEnum(Class<E> enumClass, String prompt) {
         while(true) {
             System.out.printf("Opções --- %s\n", prompt);
             for(E e : enumClass.getEnumConstants()) {
