@@ -7,6 +7,6 @@ import util.*;
 
 public class Main {
     public static void main(String[] args) {    
-        Conclusao dadosTeste = ConclusaoService.cadastrar();
+        Notificacao notificacao = NotificacaoService.cadastrar();
     }
 }
