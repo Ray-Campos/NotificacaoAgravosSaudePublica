@@ -7,6 +7,6 @@ import util.*;
 
 public class Main {
     public static void main(String[] args) {    
-        DadosResidenciais dadosTeste = DadosResidenciaisService.cadastrar();
+        DadosInvestigador dadosTeste = DadosInvestigadorService.cadastrar();
     }
 }
