@@ -10,7 +10,7 @@ public class DadosGeraisService {
         System.out.printf("\n----- Dados Gerais -----\n");
 
         String tipoNotificacao = "Individual"; //MAKE IT AUTOFILL LATER!!!!!!!
-        TipoAgravos agravo = EnumUtil.escolherEnum(TipoAgravos.class);
+        TipoAgravos agravo = EnumUtil.escolherEnum(TipoAgravos.class, "Agravo/doença");
         String codigoCID10 = ""; //randomize later LOOK HERE!!!!
         LocalDate dataNotificacao = ValidationUtil.getDate("Data de notificação ");
         String uf = ValidationUtil.getStringValido("Unidade Federativa: ");
