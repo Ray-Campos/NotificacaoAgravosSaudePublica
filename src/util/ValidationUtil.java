@@ -45,7 +45,7 @@ public class ValidationUtil {
 
     public static LocalDate getDate(String prompt) {
         while(true) {
-            System.out.printf("%s (AAAA-MM-DD): ", prompt);
+            System.out.printf("%s(AAAA-MM-DD): ", prompt);
             try {
                 return LocalDate.parse(input.nextLine());
             } catch (DateTimeParseException erro) {
